@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         editText2 = findViewById(R.id.section);
         app = new ArrayList<>();
         button1=findViewById(R.id.submit);
-        button2=findViewById(R.id.remove);
+        button2=findViewById(R.id.remove1);
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

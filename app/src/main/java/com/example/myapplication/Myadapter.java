@@ -41,6 +41,8 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
         holder.remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                notifyItemRemoved(position);
+                notifyItemRangeChanged(position,app.size());
                 app.remove(position);
             }
         });
@@ -57,7 +59,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.ViewHolder> {
        public Button remove;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.remove=(Button)itemView.findViewById(R.id.remove);
+            this.remove=(Button)itemView.findViewById(R.id.remove1);
             this.txt=(TextView)itemView.findViewById(R.id.text1);
             this.txt1=(TextView)itemView.findViewById(R.id.text2);
         }
