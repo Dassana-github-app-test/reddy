@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 public class Apps{
     String apps,des;
+    String password = "helloWorld";
     public Apps(int position) {
 
     }
